@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+".\startup_lpc17xx.o"
+".\sample.o"
+".\tamagotchi1.o"
+".\battery_updates.o"
+".\tamagotchi3.o"
+".\tamagotchi2.o"
+".\reset.o"
+".\heart.o"
+".\playsong.o"
+".\playnote.o"
+".\core_cm3.o"
+".\system_lpc17xx.o"
+".\lib_timer.o"
+".\irq_timer.o"
+".\asciilib.o"
+".\glcd.o"
+".\hzlib.o"
+".\lib_joystick.o"
+".\lib_rit.o"
+".\irq_rit.o"
+".\lib_adc.o"
+".\irq_adc.o"
+".\touchpanel_1.o"
+--strict --scatter ".\sample.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\sample.map" -o .\sample.axf
